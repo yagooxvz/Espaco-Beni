@@ -449,59 +449,70 @@ h6 {
 
 .servico-card {
   background: var(--card);
-  padding: 2rem;
+  padding: 3rem 2rem;
   border-radius: var(--radius-lg);
   border: 1px solid var(--border);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   transition: box-shadow var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .servico-card:hover {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
+/* Antigos ícones removidos */
 .servico-icon {
-  width: 3.5rem;
-  height: 3.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: var(--radius);
-  font-size: 1.5rem;
-  margin-bottom: 1.25rem;
-}
-
-.servico-icon-primary {
-  background: rgba(125, 91, 140, 0.1);
-  color: var(--primary);
-}
-
-.servico-icon-sage {
-  background: var(--secondary-2-light);
-  color: var(--secondary-2);
-}
-
-.servico-icon-accent {
-  background: var(--secondary-1-light);
-  color: #b8862a;
-}
-
-.servico-icon-lavender {
-  background: var(--lavender);
-  color: var(--foreground);
+  display: none;
 }
 
 .servico-card h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: var(--card-foreground);
   margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.servico-emoji {
+  font-size: 1.5rem;
 }
 
 .servico-card p {
   color: var(--muted-foreground);
-  font-size: 0.9375rem;
+  font-size: 1rem;
   line-height: 1.7;
+}
+
+.servico-profissional-foto {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary);
+  margin-bottom: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.servico-profissional-nome {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+  font-family: "Playfair Display", serif;
+}
+
+.servico-profissional-registro {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
 }
 
 /* ===== Galeria ===== */

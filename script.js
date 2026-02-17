@@ -197,15 +197,12 @@
       var telefone = document.getElementById("telefone").value;
       var mensagem = document.getElementById("mensagem").value;
 
-      var numeroWhatsApp = "5511999999999";
-      var texto = "Olá! Me chamo " + encodeURIComponent(nome);
-      if (mensagem) texto += ". " + encodeURIComponent(mensagem);
+      var numeroWhatsApp = "556696006781";
+      var texto = "Olá! Me chamo " + nome;
+      if (mensagem) texto += ". " + mensagem;
       var urlWhatsApp =
         "https://wa.me/" + numeroWhatsApp + "?text=" + encodeURIComponent(texto);
 
-      alert(
-        "Obrigado pelo contato! Você pode nos enviar uma mensagem pelo WhatsApp."
-      );
       window.open(urlWhatsApp, "_blank");
 
       form.reset();

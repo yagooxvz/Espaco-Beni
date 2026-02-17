@@ -17,7 +17,7 @@ Criar uma presença digital profissional para a clínica, permitindo que pacient
 
 - HTML5 semântico
 - CSS3 (responsividade com media queries)
-- JavaScript puro (vanilla JS)
+- JavaScript puro
 - Deploy contínuo via Vercel
 - Versionamento com Git e GitHub
 
@@ -47,17 +47,8 @@ Criar uma presença digital profissional para a clínica, permitindo que pacient
 
 - Utilização de HTML semântico para melhor SEO e acessibilidade.
 - Separação clara entre estrutura (HTML), estilo (CSS) e comportamento (JavaScript).
-- Arquivo CSS minificado para melhor performance em produção.
+- Arquivo CSS minificado para melhor performance e otimização.
 - Deploy automatizado utilizando integração GitHub + Vercel.
-
----
-
-## 📈 Melhorias Futuras
-
-- Implementação de SEO mais avançado
-- Integração com formulário de envio por e-mail
-- Otimização adicional de imagens
-- Melhoria na acessibilidade (ARIA attributes)
 
 ---
 

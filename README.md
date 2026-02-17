@@ -11,6 +11,16 @@ https://espaco-beni.vercel.app/
 
 Criar uma presença digital profissional para a clínica, permitindo que pacientes encontrem informações claras sobre os serviços oferecidos e entrem em contato de forma rápida e prática.
 
+### 🖥️ Desktop
+![Desktop 1](screenshots/print%20desktop%201.PNG)
+![Desktop 2](screenshots/print%20desktop%202.PNG)
+
+### 📱 Mobile
+<div style="display: flex; gap: 10px;">
+  <img src="screenshots/print%20mobile%201.PNG" width="300" alt="Mobile 1">
+  <img src="screenshots/print%20mobile%202.PNG" width="300" alt="Mobile 2">
+</div>
+
 ---
 
 ## 🚀 Tecnologias Utilizadas

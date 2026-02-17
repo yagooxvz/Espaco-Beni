@@ -458,6 +458,7 @@ h6 {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  height: 100%;
 }
 
 .servico-card:hover {
@@ -474,7 +475,10 @@ h6 {
   font-weight: 600;
   color: var(--card-foreground);
   margin-bottom: 0.75rem;
+  min-height: 3.5rem; /* Garante alinhamento se houver 2 linhas */
   display: flex;
+  flex-wrap: wrap;
+  align-content: center;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
@@ -726,11 +730,31 @@ h6 {
 
 .contato-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  max-width: 80rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 100%;
   margin: 0 auto;
   align-items: start;
+}
+
+.contato-map {
+  height: 100%;
+  min-height: 400px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.contato-map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  display: block;
+}
+
+.contato-map {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .contato-item {

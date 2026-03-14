@@ -49,7 +49,8 @@
       if (index < 0) index = total - 1;
       if (index >= total) index = 0;
       current = index;
-      track.style.transform = "translateX(-" + current * 100 + "%)";
+      var trackWidth = total * 100;
+      track.style.transform = "translateX(-" + (current * (100 / total)) + "%)";
       updateDots();
       updateThumbs();
     }
@@ -181,6 +182,13 @@
       if (lightbox && lightbox.classList.contains("active")) {
         if (e.key === "Escape") closeLightbox();
       }
+    });
+
+    // Configura tamanho exato do track da galeria
+    track.style.width = (total * 100) + "%";
+    items.forEach(function (item) {
+      item.style.width = (100 / total) + "%";
+      item.style.minWidth = "0"; // Sobrescreve CSS
     });
 
     createDots();

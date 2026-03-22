@@ -1,0 +1,3 @@
+# Ignore Python scripts created for optimization
+*.py
+__pycache__/

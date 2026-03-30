@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+    <title>Espaço Beni | Eventos Especiais</title>
+    <link rel="stylesheet" href="styles.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navegação -->
+    <header class="header">
+      <nav class="nav container">
+        <a href="index.html" class="logo">
+          <img
+            src="img/Logo-Espaco-Beni.webp"
+            alt="Espaço Beni"
+            class="logo-img"
+            width="200"
+            height="100"
+          />
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html#inicio">Início</a></li>
+          <li><a href="index.html#sobre">Sobre</a></li>
+          <li><a href="index.html#servicos">Especialidades</a></li>
+          <li><a href="eventos.html">Eventos especiais</a></li>
+          <li><a href="index.html#galeria">Galeria</a></li>
+          <li><a href="index.html#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main style="padding-top: 120px; min-height: 80vh;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Nossos Momentos</span>
+          <h1 class="section-title">Eventos Especiais</h1>
+          <p class="section-subtitle">Confira os momentos marcantes e as campanhas que o Espaço Beni realizou.</p>
+        </div>
+      </div>
+
+      <!-- Conscientização Síndrome de Down (Temporária / Especial) -->
+      <section id="conscientizacao-down" class="section conscientizacao-evento">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Apoiamos essa causa</span>
+            <h2 class="section-title">Dia Internacional da Síndrome de Down 💙💛</h2>
+            <p class="section-subtitle">
+              Celebrando a diversidade e o valor de cada indivíduo.
+            </p>
+          </div>
+
+          <div class="evento-grid">
+            <div class="evento-mosaico">
+              <div class="mosaico-principal">
+                <img src="img/foto4.webp" alt="Criança com síndrome de down e terapeuta sorrindo" class="img-evento" loading="lazy" width="800" height="auto">
+              </div>
+              <div class="mosaico-secundario">
+                <img src="img/foto3.webp" alt="Inclusão e cuidado" class="img-evento" loading="lazy" width="400" height="auto">
+              </div>
+            </div>
+
+            <div class="evento-conteudo">
+              <h3 class="evento-titulo">A Síndrome de Down não define uma criança!</h3>
+              <p class="evento-texto">
+                Ela não limita sonhos, não reduz capacidades e, principalmente, não diminui o brilho de quem ela é 💛
+              </p>
+              <p class="evento-texto">
+                Cada uma tem seu tempo, seu jeito e suas conquistas, e todas merecem oportunidades, respeito e inclusão. Valorizamos cada pequeno progresso e acreditamos que toda criança pode aprender, evoluir e participar.💙 Juntos, podemos construir uma sociedade mais inclusiva, com mais empatia e menos rótulos.
+              </p>
+
+              <div class="evento-institucional">
+                <div class="institucional-icon">💛</div>
+                <div class="institucional-texto">
+                  <h4>O papel do Espaço Beni</h4>
+                  <p>No <strong>Espaço Beni</strong>, a inclusão é a nossa essência. Trabalhamos diariamente com nossa equipe multidisciplinar para oferecer um ambiente de cuidado, onde cada paciente é valorizado e estimulado com respeito, humanidade e ciência.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carrossel das meias coloridas -->
+          <div class="evento-carrossel-container">
+            <p class="evento-carrossel-texto">
+              O Espaço Beni celebra o Dia Internacional da Síndrome de Down com o uso de <strong>meias coloridas 🧦💛</strong>, um gesto simbólico que representa a diversidade e reforça que ser diferente é natural. Cada combinação expressa a singularidade de cada criança, destacando a importância da inclusão e do respeito.
+            </p>
+            
+            <div class="evento-carrossel">
+              <div class="carrossel-item">
+                <img src="img/foto1.webp" alt="Meias coloridas - Foto 1" loading="lazy" width="400" height="400">
+              </div>
+              <div class="carrossel-item">
+                <img src="img/foto2.webp" alt="Meias coloridas - Foto 2" loading="lazy" width="400" height="400">
+              </div>
+              <div class="carrossel-item">
+                <video src="img/video1.mp4" class="video-evento" autoplay loop muted playsinline width="400" height="400"></video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <span class="footer-logo">Espaço Beni</span>
+          <p class="footer-copy">
+            © <span id="ano"></span> Espaço Beni. Feito com
+            <span class="heart">♥</span> para o seu bem-estar.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.min.js" defer></script>
+  </body>
+</html>
